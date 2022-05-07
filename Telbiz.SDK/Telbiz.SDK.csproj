@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Company>Telbiz Co., Ltd</Company>
+    <Authors>Kommaly Saykhambay</Authors>
+    <Description>Telbiz SDK provides developers with function that can send SMS, TOPUP with Laos Mobile phone</Description>
+    <PackageIcon>telbiz_icon.png</PackageIcon>
+    <PackageReleaseNotes>First version</PackageReleaseNotes>
+    <Copyright>Telbiz 2022</Copyright>
+    <RepositoryType>C#</RepositoryType>
+    <PackageTags>Telbiz</PackageTags>
+    <Version>1.0.2</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Telbiz.Helper.Standard" Version="1.0.0" />
+    <PackageReference Include="Telbiz.Shared" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="telbiz_icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
