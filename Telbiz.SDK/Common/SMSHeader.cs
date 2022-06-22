@@ -12,7 +12,7 @@ namespace Telbiz.SDK.Common
         Promotion,
         OTP,
         Info,
-        Unknown
+        Default
     }
     
 }

@@ -12,7 +12,7 @@
     <Copyright>Telbiz 2022</Copyright>
     <RepositoryType>C#</RepositoryType>
     <PackageTags>Telbiz</PackageTags>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
   </PropertyGroup>
 
   <ItemGroup>
