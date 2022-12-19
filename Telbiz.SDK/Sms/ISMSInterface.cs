@@ -11,6 +11,16 @@ namespace Telbiz.SDK.Sms
     public interface ISMSInterface
     {
         /// <summary>
+        /// This mthod used for send bulk messages
+        /// </summary>
+        /// <param name="header"></param>
+        /// <param name="phones"></param>
+        /// <param name="message"></param>
+        /// <param name="cancellationToken"></param>
+        /// <returns></returns>
+        Task<CommonResponse> BulkAsync(SMSHeader header, List<string> phones, string message, CancellationToken cancellationToken = default);
+
+        /// <summary>
         /// This method used for send simple message
         /// </summary>
         /// <param name="header"></param>

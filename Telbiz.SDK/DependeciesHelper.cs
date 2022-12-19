@@ -27,6 +27,9 @@ namespace Microsoft.Extensions.DependencyInjection
 
             // Register Topup Service
             services.AddSingleton<ITopupInterface, TopupInterface>();
+
+            Telbiz.SDK.DTOs.TokenResponse tokenResponse = new();
+            services.AddSingleton(tokenResponse);
         }
     }
 }

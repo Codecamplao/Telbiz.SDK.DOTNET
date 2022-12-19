@@ -10,6 +10,15 @@ namespace Telbiz.SDK.Topup
     public interface ITopupInterface
     {
         /// <summary>
+        /// This method used for bulk topup balance 
+        /// </summary>
+        /// <param name="phones"></param>
+        /// <param name="amount"></param>
+        /// <param name="cancellationToken"></param>
+        /// <returns></returns>
+        Task<CommonResponse> BulkAsync(List<string> phones, decimal amount, CancellationToken cancellationToken = default);
+
+        /// <summary>
         /// This method used for topup balance mobile phone number
         /// </summary>
         /// <param name="phone"></param>
